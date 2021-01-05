@@ -46,9 +46,9 @@ module.exports = {
       // 合众
       "/api/hz/": getHzAppSider("移动端", "规范"),
       "/admin/hz/": getHzAdminSider("后台管理", "说明"),
-      // 新生态
-      "/api/xst/": getXstAppSider("移动端", "规范"),
-      "/admin/xst/": getXstAdminSider("后台管理", "说明")
+      // 海马
+      "/api/hashorse/": getHashorseAppSider("移动端", "规范"),
+      "/admin/hashorse/": getHashorseAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -690,8 +690,8 @@ function getMtAdminSider(title, introduction) {
     }
   ];
 }
-// 新生态
-function getXstAppSider(title, introduction) {
+// 海马
+function getHashorseAppSider(title, introduction) {
   return [
     {
       title,
@@ -705,8 +705,8 @@ function getXstAppSider(title, introduction) {
     }
   ];
 }
-// 新生态 Admin
-function getXstAdminSider(title, introduction) {
+// 海马 Admin
+function getHashorseAdminSider(title, introduction) {
   return [
     {
       title,

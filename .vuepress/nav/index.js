@@ -65,10 +65,10 @@ module.exports = [
     ]
   },
   {
-    text: "新生态",
+    text: "海马",
     items: [
-      { text: "移动端", link: "/api/xst/" },
-      { text: "后台管理", link: "/admin/xst/" }
+      { text: "移动端", link: "/api/hashorse/" },
+      { text: "后台管理", link: "/admin/hashorse/" }
     ]
   }
 ];
