@@ -698,8 +698,8 @@ function getHashorseAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-        "fil-wallet",
-        "wallet",
+        "credit",
+        "config",
         "order"
       ]
     }
