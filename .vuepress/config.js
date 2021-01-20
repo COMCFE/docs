@@ -726,7 +726,7 @@ function getHasheveryAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-        "config"
+        "config","category","goods","order"
       ]
     }
   ];
@@ -737,7 +737,7 @@ function getHasheveryAdminSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "config","category","goods"]
+      children: [["", introduction], "config","category","goods","order"]
     }
   ];
 }
