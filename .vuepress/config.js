@@ -48,7 +48,7 @@ module.exports = {
       "/admin/hz/": getHzAdminSider("后台管理", "说明"),
       // 海马
       "/api/hashorse/": getHashorseAppSider("移动端", "规范"),
-      "/admin/hashorse/": getHashorseAdminSider("后台管理", "说明")
+      "/admin/hashorse/": getHashorseAdminSider("后台管理", "说明"),
       // 人人算力
       "/api/hashevery/": getHasheveryAppSider("移动端", "规范"),
       "/admin/hashevery/": getHasheveryAdminSider("后台管理", "说明")
