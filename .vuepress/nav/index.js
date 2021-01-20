@@ -70,5 +70,12 @@ module.exports = [
       { text: "移动端", link: "/api/hashorse/" },
       { text: "后台管理", link: "/admin/hashorse/" }
     ]
+  },
+  {
+    text: "人人算力",
+    items: [
+      { text: "移动端", link: "/api/hashevery/" },
+      { text: "后台管理", link: "/admin/hashevery/" }
+    ]
   }
 ];

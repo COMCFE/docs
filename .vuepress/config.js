@@ -49,6 +49,9 @@ module.exports = {
       // 海马
       "/api/hashorse/": getHashorseAppSider("移动端", "规范"),
       "/admin/hashorse/": getHashorseAdminSider("后台管理", "说明")
+      // 人人算力
+      "/api/hashevery/": getHasheveryAppSider("移动端", "规范"),
+      "/admin/hashevery/": getHasheveryAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -712,6 +715,29 @@ function getHashorseAdminSider(title, introduction) {
       title,
       collapsable: false,
       children: [["", introduction], "config"]
+    }
+  ];
+}
+// 人人算力
+function getHasheveryAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "config"
+      ]
+    }
+  ];
+}
+// 人人算力 Admin
+function getHasheveryAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "config","category","goods"]
     }
   ];
 }
