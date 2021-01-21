@@ -13,11 +13,14 @@
 
 |   名称    |  类型  | 默认 | 必须 |          说明          |
 | :-------: | :----: | :--: | :--: | :--------------------: |
-| num  | int |  无  |  否  | 购买数量 |
-| days |  int   |  无  |  否  |        电费天数         |
-| goods_id |  int   |  无  |  否  |        商品ID        |
-|   pay_type    |  string   |  无   |  是  |        支付方式：usdt,bank,alipay,wechat        |
-|   pay_password   |  string   |  无  |  否  |        USDT支付时为必填        |
+| status  | int |  无  |  否  | 订单状态 |
+| order_no |  string   |  无  |  否  |        订单编号         |
+| period_id |  int   |  无  |  否  |        期数        |
+|   zone    |  string   |  无   |  否  |        分区       |
+|   user_keywords   |  string   |  无  |  否  |        用户ID 或者用户注册手机号        |
+|   end_time   |  string   |  无  |  否  |        结束时间        |
+|   start_time   |  string   |  无  |  否  |        开始时间        |
+|   limit   |  string   |  无  |  否  |        分页条数        |
 
 **返回体**
 
