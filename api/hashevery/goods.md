@@ -34,7 +34,7 @@
             "price": "3180.0000",
             "market_price": "4180.0000",
             "spec": 100,
-            "years": 3,
+            "years": 3, // 期限 0 为永久
             "stock": 298,
             "limit": 0,
             "images": [
@@ -42,12 +42,12 @@
             ],
             "rate": "30",
             "power": "1",
-            "power_waste": "10",
+            "power_waste": "10", 
             "daily_output": "0.012",
             "cycle": "360",   // 回本周期
             "before": "10.0000",
             "after": "20.0000",
-            "electric_degree": "30",
+            "electric_degree": "30", 
             "custody_rate": "30%",
             "risk_description": "空腹蝴蝶谷湖订单价格杜建国交电费都看过缴费的",
             "business_description": "飞机哦和规范化分交话费尽快还你及客服",

@@ -47,6 +47,7 @@
             "yesterday_output": "0",// 昨日产出
             "status": 2,  //   0, 待支付 1, 已支付(待商家确认) 2,  已确认(部署中) 3,  挖矿中 4,  已结束5,  已关闭 6,   欠电费
             "recovery": 0, // 是否回本
+            "order_cate": 0, // 0 为普通订单  1 为 永久订单
             "admin_id": 0,
             "pay_time": null,
             "created_at": "2021-01-20 14:02:49",
@@ -104,6 +105,7 @@
             "yesterday_output": "0",
             "status": 2,
             "recovery": 0,
+            "order_cate": 0, // 0 为普通订单  1 为 永久订单
             "admin_id": 0,
             "pay_time": "2021-01-20 13:47:36",
             "created_at": "2021-01-20 13:47:36",

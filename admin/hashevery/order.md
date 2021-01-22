@@ -52,6 +52,7 @@
                 "yesterday_output": "0",
                 "status": 0,
                 "recovery": 0,
+                "order_cate": 0, // 0 为普通订单  1 为 永久订单
                 "admin_id": 0,
                 "pay_time": null,
                 "created_at": "2021-01-20 14:02:49",
