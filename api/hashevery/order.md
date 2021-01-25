@@ -159,9 +159,9 @@
 
 |   名称    |  类型  | 默认 | 必须 |          说明          |
 | :-------: | :----: | :--: | :--: | :--------------------: |
-| num  | int |  无  |  否  | 购买数量 |
-| days |  int   |  无  |  否  |        电费天数         |
-| goods_id |  int   |  无  |  否  |        商品ID        |
+| num  | int |  无  |  是  | 购买数量 |
+| days |  int   |  无  |  是  |        电费天数         |
+| goods_id |  int   |  无  |  是  |        商品ID        |
 |   pay_type    |  string   |  无   |  是  |        支付方式：usdt,bank,alipay,wechat        |
 |   pay_password   |  string   |  无  |  否  |        USDT支付时为必填        |
 
@@ -190,8 +190,8 @@
 
 |   名称    |  类型  | 默认 | 必须 |          说明          |
 | :-------: | :----: | :--: | :--: | :--------------------: |
-| days |  int   |  无  |  否  |        电费天数         |
-| order_id |  int   |  无  |  否  |        商品ID        |
+| days |  int   |  无  |  是  |        电费天数         |
+| order_id |  int   |  无  |  是  |        商品ID        |
 |   pay_type    |  string   |  无   |  是  |        支付方式：usdt,bank,alipay,wechat        |
 |   pay_password   |  string   |  无  |  否  |        USDT支付时为必填        |
 
@@ -223,7 +223,7 @@
 | buy_type |  string   |  无  |  是  |        矿机：goods 电费：electric        |
 | electric_order_id |  int   |  无  |  否  |       buy_type为 electric 时必传      |
 |   order_id    |  int   |  无   |  否  |        buy_type为 goods 时必传         |
-|   credential   |  string   |  无  |  否  |        凭证图片地址        |
+|   credential   |  string   |  无  |  是  |        凭证图片地址        |
 
 **返回体**
 
