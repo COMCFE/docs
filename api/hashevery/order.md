@@ -351,3 +351,37 @@ none
   "data": null
 }
 ```
+
+## 获取ETH,BTC矿机 电费订单即将过期数量
+
+
+**方式**
+
+`GET`
+
+**参数**
+
+none
+
+**路径**
+
+`api/orders/notice`
+
+**响应**
+
+`Status code 200`
+::: tip
+notice > 0 表示有订单即将过期或者已存在订单电费过期
+
+notice = 0 表示不存在订单电费即将过期
+:::
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "notice": 0
+    }
+}
+```
