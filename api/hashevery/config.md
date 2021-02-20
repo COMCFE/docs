@@ -62,6 +62,14 @@
             "qq": "qq111",
             "wechat": "wechat"
         },
+        "electricity": {
+                    "year": "0.3",  // 全年电价
+                    "gpu_year": "0.36", // 全年显卡电价
+                    "end_month": 3,     // 
+                    "low_water": "0.5",// 枯水电价
+                    "full_water": "0.4",// 沣水电价
+                    "start_month": 1 //
+                },
         "cdn_domain": "http://hashevery.cellike.cn",
         "purchase_protocol": "http://hashevery.cellike.cn/purchase/protocol",
         "hosting_protocol": "http://hashevery.cellike.cn/hosting/protocol"
