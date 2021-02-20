@@ -130,6 +130,7 @@
 | :-------: | :----: | :--: | :--: | :--------------------: |
 | amount |  int   |  无  |  是  |       充值金额        |
 | pay_type |  string   |  无  |  是  |      支付方式：usdt,alipay,wechat,bank      |
+| pay_password |  string   |  无  |  是  |      支付方式：usdt 时必传      |
 
 **返回体**
 
@@ -137,7 +138,9 @@
 {
     "msg": "购买成功",
     "code": 0,
-    "data": null
+    "data": {
+        "id": 1
+    }
 }
 ```
 
