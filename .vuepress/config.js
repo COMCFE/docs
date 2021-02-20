@@ -726,7 +726,7 @@ function getHasheveryAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-        "config","category","goods","order"
+        "config","category","goods","order","elec"
       ]
     }
   ];

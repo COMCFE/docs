@@ -117,3 +117,27 @@
     }
 }
 ```
+## 修改电价配置
+
+`admin/configs/electricity`
+
+**请求方式**
+
+`PUT`
+
+**请求参数**
+
+|      名称      |  类型  | 默认 | 必须 |    说明    |
+| :------------: | :----: | :--: | :--: | :--------: |
+|  year  | string |  无  |  是  |   全年电价   |
+|      gpu_year      | string |  无  |  是  |   显卡全年电价   |
+| low_water | string |  无  |  是  |   枯水电价   |
+|   full_water    | string |  无  |  是  | 沣水电价 |
+|   start_month    | int |  无  |  是  | 沣水开始月 |
+|   end_month    | int |  无  |  是  | 沣水结束月 |
+
+**返回体**
+
+```json
+
+```
