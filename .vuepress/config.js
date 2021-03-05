@@ -51,7 +51,10 @@ module.exports = {
       "/admin/hashorse/": getHashorseAdminSider("后台管理", "说明"),
       // 人人算力
       "/api/hashevery/": getHasheveryAppSider("移动端", "规范"),
-      "/admin/hashevery/": getHasheveryAdminSider("后台管理", "说明")
+      "/admin/hashevery/": getHasheveryAdminSider("后台管理", "说明"),
+      // 标准模板
+      "/api/template/": getTemplateAppSider("移动端", "规范"),
+      "/admin/template/": getTemplateAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -733,6 +736,29 @@ function getHasheveryAppSider(title, introduction) {
 }
 // 人人算力 Admin
 function getHasheveryAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "config","category","goods","order"]
+    }
+  ];
+}
+// 标准模板
+function getTemplateAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "home","user","ad","category","elec","config","equipment","goods","help","invite","market","message","news","order","wallet"
+      ]
+    }
+  ];
+}
+// 标准模板 Admin
+function getTemplateAdminSider(title, introduction) {
   return [
     {
       title,

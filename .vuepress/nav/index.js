@@ -77,5 +77,12 @@ module.exports = [
       { text: "移动端", link: "/api/hashevery/" },
       { text: "后台管理", link: "/admin/hashevery/" }
     ]
+  },
+  {
+    text: "标准模板",
+    items: [
+      { text: "移动端", link: "/api/template/" },
+      { text: "后台管理", link: "/admin/template/" }
+    ]
   }
 ];
