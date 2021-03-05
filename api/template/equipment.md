@@ -1,10 +1,63 @@
 # 我的设备
 
+## 设备列表
+
+**路径**
+` /equipments `
+
+**方式**
+
+GET
+|  名称  | 类型 | 默认 | 必须 |   说明   |
+| :----: | :--: | :--: | :--: | :------: |
+| zone | string  |  无   |  否  |  分类名称：IPFS:fil/ETH:eth/BTC:btc  |
+| offset | int  |  0   |  是  |  偏移量  |
+| limit  | int  |  15  |  是  | 每页条数 |
+
+**响应**
+
+`Status code 200`
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "orders": [
+            {
+                "id": 1,
+                "num": 1,//购买数
+                "status": 3,//状态
+                "goods_order": {
+                    "order_id": 1,
+                    "spec_num": 168,//规格数
+                    "period_id": 5,
+                    "spec_id": 1,
+                    "period": {
+                        "id": 5,
+                        "name": "20210201-283T"//期数
+                    },
+                    "spec": {
+                        "id": 1,
+                        "name": "64G"//规格
+                    }
+                },
+                "assets": {
+                    "order_id": 1,
+                    "fz_num": "100.80000000",//封装数
+                    "total_ming": "268.80000000"//挖矿总数
+                }
+            }
+        ],
+        "total": "504"//设备总数
+    }
+}
+```
 ## 设备详情
 
 **路径**
 ` /equipment/{order} `
-  
+
 **方式**
 
 GET
@@ -125,7 +178,7 @@ GET
 **路径**
 
  ` orders/miner_log/{order_id} `
-  
+
 **方式**
 
 GET
@@ -174,7 +227,7 @@ GET
 **路径**
 
 ` orders/linear_release/{order_id} `
-  
+
 **方式**
 
 GET
