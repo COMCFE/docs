@@ -342,10 +342,10 @@
 |  type   | string |  是  | fil/erc/btc/usdt-trx |
 
 ::: tip
-fil 绑定提币地址 type 传参 fil
-btc 绑定提币地址 type 传参 btc
-ETH,USDT erc20  绑定提币地址 type 传参 erc
-USDT trc20  绑定提币地址 type 传参 usdt-trx
+fil 绑定提币地址 type 传参 fil<br/>
+btc 绑定提币地址 type 传参 btc<br/>
+ETH,USDT erc20  绑定提币地址 type 传参 erc<br/>
+USDT trc20  绑定提币地址 type 传参 usdt-trx<br/>
 :::
 
 **路径**

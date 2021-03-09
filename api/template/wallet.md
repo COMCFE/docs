@@ -125,9 +125,9 @@
 | pay_password | string  |  是  |          支付密码          |
 
 ::: tip
-fil 提币 currency 传参 fil
-btc 提币 currency 传参 btc
-ETH,USDT erc20  提币 currency 传参 erc
+fil 提币 currency 传参 fil <br/>
+btc 提币 currency 传参 btc <br/>
+ETH,USDT erc20  提币 currency 传参 erc <br/>
 USDT trc20  提币 currency 传参 usdt-trx
 :::
 
