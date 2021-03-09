@@ -121,16 +121,15 @@
     "phone": "13822742306",
     "code": "0CGLAX",
     "agency_id": 0,
-    "performance": "0.00" /*业绩*/,
-    "self_usdt": "0.0000" /*自身贡献USDt数量*/,
-    "direct_usdt": "0.0000" /*直推贡献USDT数量*/,
-    "self_kj_num": 0 /*自身购买矿机台数*/,
-    "sale_kj_num": 0 /*销售矿机台数*/,
-    "fil_address": "asds" /*fil提币地址未设置未null*/,
-    "erc_address": "asds" /*erc提币地址未设置未null*/,
     "created_at": "2020-11-10 16:55:08",
     "updated_at": "2020-11-10 17:18:58",
     "paypass_status": false,
+    "currency_address": {    // 用户提币地址
+     "fil_address": "TDe2wfjKwc6Nfz9nSnjAt7kpnTE94FcKHL", // fil提币地址
+     "erc_address": "TDe2wfjKwc6Nfz9nSnjAt7kpnTE94FcKHL", // ETH USDT erc20 提币地址
+     "btc_address": "TDe2wfjKwc6Nfz9nSnjAt7kpnTE94FcKHL", // btc提币地址
+     "usdt-trx_address": "TDe2wfjKwc6Nfz9nSnjAt7kpnTE94FcKHL" // usdt trc20 提币地址
+    },
     "inviter": {
       "id": 1,
       "name": "张测试",
@@ -340,7 +339,14 @@
 |  名称   |  类型  | 必须 |  说明   |
 | :-----: | :----: | :--: | :-----: |
 | address | string |  是  |  地址   |
-|  type   | string |  是  | fil/erc |
+|  type   | string |  是  | fil/erc/btc/usdt-trx |
+
+::: tip
+fil 绑定提币地址 type 传参 fil
+btc 绑定提币地址 type 传参 btc
+ETH,USDT erc20  绑定提币地址 type 传参 erc
+USDT trc20  绑定提币地址 type 传参 usdt-trx
+:::
 
 **路径**
 

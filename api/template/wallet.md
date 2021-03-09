@@ -32,9 +32,15 @@
       "income": "0.0000" /*已释放*/,
       "expend": "0.0000",
       "wait": "0.0000" /*待释放*/,
-      "currency": "fil",
-      "secret": "asdasdsa" /**/,
-      "address": "asdsadas" /*冲币地址*/
+      "currency": "usdt",
+       "info": {
+       "erc": {
+       "secret": "bb8f56a846174dabbf5add175c905522","address": "0xced8eb45263492d26b3d3764e5f8a021b3111b6d"
+        },
+         "trx": {
+         "secret": "0b945d8d77b04ae5863ac6d0cccbb073", "address": "TTeRcHHJ2w3tKPrQA91ZPmT3JprVenCdzZ"
+         }
+         }
     }
   ]
 }
@@ -118,6 +124,13 @@
 |     num      | numeric |  是  |          提现数量          |
 | pay_password | string  |  是  |          支付密码          |
 
+::: tip
+fil 提币 currency 传参 fil
+btc 提币 currency 传参 btc
+ETH,USDT erc20  提币 currency 传参 erc
+USDT trc20  提币 currency 传参 usdt-trx
+:::
+
 **响应**
 
 `Status code 200`
@@ -140,35 +153,5 @@
     "created_at": "2020-11-24 14:36:20",
     "id": 2
   }
-}
-```
-
-## 兑换
-
-**方式**
-
-`POST`
-
-**路径**
-
-`/api/conversion`
-
-**参数**
-
-|     名称     |  类型   | 必须 |         说明          |
-| :----------: | :-----: | :--: | :-------------------: |
-|   currency   | string  |  是  | 资产类型: eth/btc/fil |
-|     num      | numeric |  是  |       兑换数量        |
-| pay_password | string  |  是  |       支付密码        |
-
-**响应**
-
-`Status code 200`
-
-```json
-{
-  "msg": "申请成功",
-  "code": 0,
-  "data": null
 }
 ```
