@@ -28,6 +28,10 @@ GET
                 "id": 1,
                 "num": 1,//购买数
                 "status": 3,//状态
+                "recovery": 0,//是否回本0:未回本 1:回本
+                "total_output": "0",//累计产出
+                "yesterday_output": "0",//昨日产出
+                "total_price": "344400.0000",//订单总价
                 "goods_order": {
                     "order_id": 1,
                     "spec_num": 168,//规格数
