@@ -27,7 +27,7 @@ GET
             {
                 "id": 1,
                 "num": 1,//购买数
-                "status": 3,//状态
+                "status": 3,//状态 2-已确认(部署中)/3-挖矿中/4-已结束
                 "recovery": 0,//是否回本0:未回本 1:回本
                 "total_output": "0",//累计产出
                 "yesterday_output": "0",//昨日产出
