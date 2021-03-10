@@ -60,7 +60,7 @@ GET
 ## 设备详情
 
 **路径**
-` /equipment/{order} `
+` /equipments/{order} `
 
 **方式**
 
@@ -167,7 +167,7 @@ GET
 ## 归还明细
 
 **路径**
-` equipment/return_log/{order_id} `
+` equipments/return_log/{order_id} `
 
 **方式**
 
@@ -198,7 +198,7 @@ GET
 
 **路径**
 
- ` orders/miner_log/{order_id} `
+ ` equipments/miner_log/{order_id} `
 
 **方式**
 
@@ -247,7 +247,7 @@ GET
 
 **路径**
 
-` orders/linear_release/{order_id} `
+` equipments/linear_release/{order_id} `
 
 **方式**
 
