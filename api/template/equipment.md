@@ -142,7 +142,8 @@ GET
             "spec_id": 1,
             "period": {
                 "id": 5,
-                "name": "20210201-283T"
+                "name": "20210201-283T",
+                "interest":6 //利率
             }
         },
         "assets": {
