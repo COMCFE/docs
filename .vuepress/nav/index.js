@@ -84,5 +84,12 @@ module.exports = [
       { text: "移动端", link: "/api/template/" },
       { text: "后台管理", link: "/admin/template/" }
     ]
+  },
+  {
+    text: "甬力区",
+    items: [
+      { text: "移动端", link: "/api/ylq/" },
+      { text: "后台管理", link: "/admin/ylq/" }
+    ]
   }
 ];

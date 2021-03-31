@@ -54,7 +54,10 @@ module.exports = {
       "/admin/hashevery/": getHasheveryAdminSider("后台管理", "说明"),
       // 标准模板
       "/api/template/": getTemplateAppSider("移动端", "规范"),
-      "/admin/template/": getTemplateAdminSider("后台管理", "说明")
+      "/admin/template/": getTemplateAdminSider("后台管理", "说明"),
+      // 甬力区
+      "/api/ylq/": getYlqAppSider("移动端", "规范"),
+      "/admin/ylq/": getYlqAdminSider("后台管理", "说明")
     }
   },
   plugins: [
@@ -764,6 +767,30 @@ function getTemplateAdminSider(title, introduction) {
       title,
       collapsable: false,
       children: [["", introduction], "config","category","goods","order"]
+    }
+  ];
+}
+
+// 甬力区
+function getYlqAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "transfer-accounts"
+      ]
+    }
+  ];
+}
+// 甬力区 Admin
+function getYlqAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [["", introduction], "config"]
     }
   ];
 }
