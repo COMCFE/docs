@@ -86,7 +86,6 @@
 | :----: | :--: | :--: | :--------------: |
 | amount |string|  是  |     转账个数     |
 | target_user_id  | int  |  是  |  目标用户id   |
-| service_charge  | string  |  是  |  手续费   |
 | pay_password   | string  |  是  |  支付密码   |
 
 **路径**
