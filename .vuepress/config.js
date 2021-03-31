@@ -790,7 +790,7 @@ function getYlqAdminSider(title, introduction) {
     {
       title,
       collapsable: false,
-      children: [["", introduction], "config","transferAccounts"]
+      children: [["", introduction], "config","distributor","transferAccounts"]
     }
   ];
 }
