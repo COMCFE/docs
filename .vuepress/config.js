@@ -779,7 +779,7 @@ function getYlqAppSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
-        "transfer-accounts"
+        "transferAccounts"
       ]
     }
   ];
