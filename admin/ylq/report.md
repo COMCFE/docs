@@ -16,6 +16,8 @@
 | :----: | :---: | :--: | :--: | :------------------: |
 | limit | int |  20  |  否  | 每页条数 |
 | currency | string |  fil  |  否  | 提币类型 |
+| start_time | string |    |  否  | 开始时间 |
+| end_time | string |    |  否  | 结束时间 |
 
 **返回体**
 
@@ -24,7 +26,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "list": {                 //当日提币流水
+        "list": {                 //提币流水
             "current_page": 1,
             "data": [
                 {
@@ -119,6 +121,8 @@
 
 |  名称  | 类型  | 默认 | 必须 |         说明         |
 | :----: | :---: | :--: | :--: | :------------------: |
+| start_time | string |    |  否  | 开始时间 |
+| end_time | string |    |  否  | 结束时间 |
 
 **返回体**
 
@@ -127,7 +131,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "yesterday_num": 7,     //昨日新增数量
+        "yesterday_num": 7,     //新增数量
         "total_num": 9          //累计用户数量
     }
 }
@@ -149,6 +153,8 @@
 | limit | int |  20  |  否  | 每页条数 |
 | pay_type | string |  usdt  |  是  | 支付方式 |
 | period_id | int |  无  |  否  | 期数id |
+| start_time | string |    |  否  | 开始时间 |
+| end_time | string |    |  否  | 结束时间 |
 **返回体**
 
 ```json
@@ -156,7 +162,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "list": {         //每日销售流水
+        "list": {         //销售流水
             "current_page": 1,
             "data": [
                 {
@@ -276,7 +282,7 @@
             "total": 1
         },
         "total_amount": "34.0000",      //平台总销售金额
-        "period_yesterday_num": 0,      //昨日销售数量T
+        "period_yesterday_num": 0,      //筛选时间/昨日销售数量T
         "period_total_num": 1,          //累计销售数量T
         "period_total_amount": "34.0000"//累计销售金额
     }
@@ -297,6 +303,8 @@
 |  名称  | 类型  | 默认 | 必须 |         说明         |
 | :----: | :---: | :--: | :--: | :------------------: |
 | limit | int |  20  |  否  | 每页条数 |
+| start_time | string |    |  否  | 开始时间 |
+| end_time | string |    |  否  | 结束时间 |
 
 **返回体**
 
@@ -305,7 +313,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "list": {       //每日挖矿流水
+        "list": {       //挖矿流水
             "current_page": 1,
             "data": [
                 {
@@ -377,6 +385,8 @@
 |  名称  | 类型  | 默认 | 必须 |         说明         |
 | :----: | :---: | :--: | :--: | :------------------: |
 | currency | string |  fil  |  否  | 币种 |
+| start_time | string |    |  否  | 开始时间 |
+| end_time | string |    |  否  | 结束时间 |
 
 **返回体**
 
@@ -385,7 +395,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "yesterday_num": 0,           //昨日累计充值
+        "yesterday_num": 0,           //筛选时间/昨日累计充值
         "total_num": "50.00000000"    //累计充值
     }
 }
