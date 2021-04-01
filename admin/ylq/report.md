@@ -282,3 +282,83 @@
     }
 }
 ```
+
+## 挖矿报表
+
+`/admin/report/mine`
+
+**请求方式**
+
+`GET`
+
+
+**请求参数**
+
+|  名称  | 类型  | 默认 | 必须 |         说明         |
+| :----: | :---: | :--: | :--: | :------------------: |
+| limit | int |  20  |  否  | 每页条数 |
+
+**返回体**
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "list": {       //每日挖矿流水
+            "current_page": 1,
+            "data": [
+                {
+                    "id": 5,
+                    "period_id": 1,
+                    "order_count": 1,
+                    "currency": "fil",
+                    "amount": "20.00000000",
+                    "fz_num": "2.00000000",
+                    "gas": "2.00000000",
+                    "pledge": "2.00000000",
+                    "admin_id": 2,
+                    "created_at": "2021-04-01 14:20:48",
+                    "updated_at": "2021-04-01 14:20:48",
+                    "period": {
+                        "id": 1,
+                        "name": "20210331",
+                        "extend": {
+                            "lock": 20,
+                            "pawn": 20,
+                            "frozen": 20,
+                            "security": 20,
+                            "withdrawable": 20
+                        },
+                        "interest": "10.00",
+                        "gas": "2.00000000",
+                        "pledge": "2.00000000",
+                        "back_interest": "0.00000000",
+                        "spec_id": 2,
+                        "type": "fil",
+                        "created_at": "2021-03-31 11:00:22",
+                        "updated_at": "2021-04-01 14:20:50",
+                        "cate": 0,
+                        "issue_status": 1
+                    },
+                    "admin": {
+                        "id": 2,
+                        "name": "admin"
+                    }
+                }
+            ],
+            "first_page_url": "http://ylq.hashark.vip/admin/report/mine?page=1",
+            "from": 1,
+            "last_page": 1,
+            "last_page_url": "http://ylq.hashark.vip/admin/report/mine?page=1",
+            "next_page_url": null,
+            "path": "http://ylq.hashark.vip/admin/report/mine",
+            "per_page": 15,
+            "prev_page_url": null,
+            "to": 1,
+            "total": 1
+        },
+        "total_num": "20.00000000"    //总挖矿数量
+    }
+}
+```
