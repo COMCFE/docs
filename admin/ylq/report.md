@@ -131,7 +131,7 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "yesterday_num": 7,     //新增数量
+        "yesterday_num": 7,     //昨日新增数量
         "total_num": 9          //累计用户数量
     }
 }
@@ -395,8 +395,10 @@
     "msg": "ok",
     "code": 0,
     "data": {
-        "yesterday_num": 0,           //筛选时间/昨日累计充值
-        "total_num": "50.00000000"    //累计充值
+        "usdt_yesterday_num": 0,            //usdt昨日充值数量
+        "fil_yesterday_num": 0,             //fil昨日充值数量
+        "usdt_total_num": "50.00000000",    //usdt累计充值数量
+        "fil_total_num": "32.50000000"      //fil累计充值数量
     }
 }
 ```
