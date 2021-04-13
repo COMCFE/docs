@@ -91,5 +91,11 @@ module.exports = [
       { text: "移动端", link: "/api/ylq/" },
       { text: "后台管理", link: "/admin/ylq/" }
     ]
+  },
+  {
+    text: "蚁创科技",
+    items: [
+      { text: "移动端", link: "/api/yckj/" },
+    ]
   }
 ];

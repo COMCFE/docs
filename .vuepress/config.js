@@ -58,6 +58,8 @@ module.exports = {
       // 甬力区
       "/api/ylq/": getYlqAppSider("移动端", "规范"),
       "/admin/ylq/": getYlqAdminSider("后台管理", "说明")
+      // 蚁创科技
+      "/api/yckj/": getYckjAppSider("移动端", "规范"),
     }
   },
   plugins: [
@@ -793,6 +795,20 @@ function getYlqAdminSider(title, introduction) {
       children: [
         ["", introduction],
         "config","distributor","transferAccounts","report"
+      ]
+    }
+  ];
+}
+
+// 蚁创科技
+function getYckjAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "power"
       ]
     }
   ];
