@@ -57,7 +57,7 @@ module.exports = {
       "/admin/template/": getTemplateAdminSider("后台管理", "说明"),
       // 甬力区
       "/api/ylq/": getYlqAppSider("移动端", "规范"),
-      "/admin/ylq/": getYlqAdminSider("后台管理", "说明")
+      "/admin/ylq/": getYlqAdminSider("后台管理", "说明"),
       // 蚁创科技
       "/api/yckj/": getYckjAppSider("移动端", "规范"),
     }
