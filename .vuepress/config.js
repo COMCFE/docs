@@ -823,7 +823,11 @@ function getSaasSAdminSider(title, introduction) {
       title,
       collapsable: false,
       children: [
-        ["", introduction],
+          ["", introduction],
+          "spec",
+          "category",
+          "period",
+          "goods",
       ]
     }
   ];
