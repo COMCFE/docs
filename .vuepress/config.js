@@ -828,6 +828,12 @@ function getSaasSAdminSider(title, introduction) {
           "category",
           "period",
           "goods",
+          "certification",
+          "cny_withdrawal",
+          "config",
+          "transfer",
+          "users",
+          "withdrawal",
       ]
     }
   ];
