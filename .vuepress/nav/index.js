@@ -85,17 +85,23 @@ module.exports = [
       { text: "后台管理", link: "/admin/template/" }
     ]
   },
+  // {
+  //   text: "甬力区",
+  //   items: [
+  //     { text: "移动端", link: "/api/ylq/" },
+  //     { text: "后台管理", link: "/admin/ylq/" }
+  //   ]
+  // },
+  // {
+  //   text: "蚁创科技",
+  //   items: [
+  //     { text: "移动端", link: "/api/yckj/" },
+  //   ]
+  // }
   {
-    text: "甬力区",
+    text: "SaaS管理后台",
     items: [
-      { text: "移动端", link: "/api/ylq/" },
-      { text: "后台管理", link: "/admin/ylq/" }
-    ]
-  },
-  {
-    text: "蚁创科技",
-    items: [
-      { text: "移动端", link: "/api/yckj/" },
+      { text: "后台管理", link: "/admin/saas/" }
     ]
   }
 ];

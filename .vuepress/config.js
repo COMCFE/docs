@@ -60,6 +60,8 @@ module.exports = {
       "/admin/ylq/": getYlqAdminSider("后台管理", "说明"),
       // 蚁创科技
       "/api/yckj/": getYckjAppSider("移动端", "规范"),
+      //saas管理后台
+      "/admin/saas/": getSaasSAdminSider("管理后台", "规范"),
     }
   },
   plugins: [
@@ -809,6 +811,19 @@ function getYckjAppSider(title, introduction) {
       children: [
         ["", introduction],
         "power"
+      ]
+    }
+  ];
+}
+
+// SaaS管理后台
+function getSaasSAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
       ]
     }
   ];
