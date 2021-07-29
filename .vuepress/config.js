@@ -874,6 +874,9 @@ function getSaasSApiSider(title, introduction) {
         ["", introduction],
         "order",
         "electric_order",
+        "user",
+        "feedback",
+        "certification",
       ]
     }
   ];
