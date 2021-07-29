@@ -872,6 +872,8 @@ function getSaasSApiSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "order",
+        "electric_order",
       ]
     }
   ];
