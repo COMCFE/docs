@@ -397,3 +397,169 @@
     }
 }
 ```
+
+## 转账-详情
+
+#### 接口URL
+> fil/usdt/eth/btc/xch
+> {{url}}/configs//fil/transfer
+
+#### 请求方式
+> GET
+
+#### 成功响应示例
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 17,
+        "key": "fil_transfer",
+        "value": {
+            "instr": "转账说明",
+            // 开关
+            "switch": "on",
+            // 手续费
+            "fil_fee": 5,
+            // 最低
+            "user_min": "10",
+            // 单日最多
+            "user_day_limit": "100"
+        },
+        "created_at": "2021-07-28 06:24:02",
+        "updated_at": "2021-07-28 06:24:02"
+    }
+}
+```
+
+## 转账-修改
+
+#### 接口URL
+> fil/usdt/eth/btc/xch
+> {{url}}/configs/fil/transfer
+
+#### 请求方式
+> ANY
+
+|   参数   |  类型  | 默认 | 必须 |     说明     |
+| :------: | :----: | :--: | :--: | :----------: |
+| user_min | string |  无  |  是  | 单次最低 |
+| user_day_limit | string |  无  |  是  | 用户单日上限 |
+| instr | string |  无  |  是  | 说明 |
+| switch | string |  无  |  是  | 开关 |
+| fil_fee | string |  无  |  是  | 手续费 |
+#### 成功响应示例
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": {
+        "id": 17,
+        "key": "fil_transfer",
+        "value": {
+            "user_min": "10",
+            "user_day_limit": "100",
+            "instr": "说明",
+            "switch": "on",
+            "fil_fee": "1"
+        },
+        "created_at": "2021-07-28 06:24:02",
+        "updated_at": "2021-07-28 10:39:47"
+    }
+}
+```
+
+## 税点-详情
+
+#### 接口URL
+> {{url}}/configs/tax
+
+#### 请求方式
+> GET
+
+#### 成功响应示例
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 22,
+        "key": "tax",
+        "value": {
+            "bank": "6",
+            "usdt": "6"
+        },
+        "created_at": "2021-07-28 06:24:02",
+        "updated_at": "2021-07-28 06:24:02"
+    }
+}
+```
+## 税点-修改
+
+#### 接口URL
+> {{url}}/configs/tax
+
+#### 请求方式
+> ANY
+
+|   参数   |  类型  | 默认 | 必须 |     说明     |
+| :------: | :----: | :--: | :--: | :----------: |
+| usdt | string |  无  |  是  | usdt税点 |
+| bank | string |  无  |  是  | 人民币税点 |
+#### 成功响应示例
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": null
+}
+```
+## 签名-详情
+
+#### 接口URL
+> {{url}}/configs/sign
+
+#### 请求方式
+> GET
+
+#### 成功响应示例
+
+```json
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "id": 23,
+        "key": "sign",
+        "value": "saas",
+        "created_at": "2021-07-28 06:24:02",
+        "updated_at": "2021-07-28 06:24:02"
+    }
+}
+```
+
+## 签名-修改
+
+#### 接口URL
+> {{url}}/configs/sign
+
+#### 请求方式
+> ANY
+
+|   参数   |  类型  | 默认 | 必须 |     说明     |
+| :------: | :----: | :--: | :--: | :----------: |
+| sign | string |  无  |  是  | 签名内容 |
+
+#### 成功响应示例
+
+```json
+{
+    "msg": "修改成功",
+    "code": 0,
+    "data": null
+}
+```
