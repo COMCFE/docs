@@ -1,19 +1,19 @@
 module.exports = [
-  {
-    text: "链优品",
-    items: [
-      { text: "移动端", link: "/api/lianyoupin/" },
-      { text: "后台管理", link: "/admin/lianyoupin/" },
-      { text: "商户管理", link: "/merchant/" }
-    ]
-  },
-  {
-    text: "iMeet",
-    items: [
-      { text: "移动端", link: "/api/imeet/" },
-      { text: "后台管理", link: "/admin/imeet/" }
-    ]
-  },
+  // {
+  //   text: "链优品",
+  //   items: [
+  //     { text: "移动端", link: "/api/lianyoupin/" },
+  //     { text: "后台管理", link: "/admin/lianyoupin/" },
+  //     { text: "商户管理", link: "/merchant/" }
+  //   ]
+  // },
+  // {
+  //   text: "iMeet",
+  //   items: [
+  //     { text: "移动端", link: "/api/imeet/" },
+  //     { text: "后台管理", link: "/admin/imeet/" }
+  //   ]
+  // },
   // {
   //   text: "链聊",
   //   items: [
@@ -50,13 +50,13 @@ module.exports = [
   //     { text: "后台管理", link: "/admin/cyb/" }
   //   ]
   // },
-  {
-    text: "MT",
-    items: [
-      { text: "移动端", link: "/api/mt/" },
-      { text: "后台管理", link: "/admin/mt/" }
-    ]
-  },
+  // {
+  //   text: "MT",
+  //   items: [
+  //     { text: "移动端", link: "/api/mt/" },
+  //     { text: "后台管理", link: "/admin/mt/" }
+  //   ]
+  // },
   // {
   //   text: "合众",
   //   items: [
@@ -71,13 +71,13 @@ module.exports = [
   //     { text: "后台管理", link: "/admin/hashorse/" }
   //   ]
   // },
-  {
-    text: "人人算力",
-    items: [
-      { text: "移动端", link: "/api/hashevery/" },
-      { text: "后台管理", link: "/admin/hashevery/" }
-    ]
-  },
+  // {
+  //   text: "人人算力",
+  //   items: [
+  //     { text: "移动端", link: "/api/hashevery/" },
+  //     { text: "后台管理", link: "/admin/hashevery/" }
+  //   ]
+  // },
   {
     text: "标准模板",
     items: [
@@ -99,7 +99,7 @@ module.exports = [
   //   ]
   // }
   {
-    text: "SaaS管理后台",
+    text: "SaaS品牌商",
     items: [
       { text: "后台管理", link: "/admin/saas/" }
     ]
