@@ -852,6 +852,13 @@ function getSaasSAdminSider(title, introduction) {
         "share",
         "version",
         "zone",
+        "feedback",
+        "home",
+        "market",
+        "new",
+        "new_cate",
+        "recharge_logs",
+        "tenant",
       ]
     }
   ];
