@@ -21,7 +21,7 @@
 | password  |  string   |  无  |  否 |       密码       |
 | verification_code  |  string   |  无  |  否 |       验证码       |
 | code  |  string   |  无  |  否 |       谷歌验证码       |
-| do_bind  |  int   |  无  |  是 |       是否已绑定谷歌验证码       |
+| do_bind  |  int   |  无  |  是 |       是否绑定谷歌验证码       |
 
 **SUCCESS 返回体**
 

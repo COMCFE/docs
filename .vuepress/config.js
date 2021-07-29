@@ -62,6 +62,7 @@ module.exports = {
       // "/api/yckj/": getYckjAppSider("移动端", "规范"),
       //saas管理后台
       "/admin/saas/": getSaasSAdminSider("SaaS品牌商管理后台", "规范"),
+      "/api/saas/": getSaasSApiSider("SaaS品牌商移动端", "规范"),
     }
   },
   plugins: [
@@ -859,6 +860,18 @@ function getSaasSAdminSider(title, introduction) {
         "new_cate",
         "recharge_logs",
         "tenant",
+      ]
+    }
+  ];
+}
+// SaaS品牌商api
+function getSaasSApiSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
       ]
     }
   ];

@@ -28,7 +28,77 @@
 **SUCCESS 返回体**
 
 ```json
-
+{
+    "msg": "ok",
+    "code": 0,
+    "data": {
+        "current_page": 1,
+        "data": [
+            {
+                "id": 1,
+                "name": "测试分组",
+                "zone": "fil",
+                "extend": null,
+                "created_at": "2021-07-29 03:33:21",
+                "updated_at": "2021-07-29 03:33:21",
+                "periods": [
+                    {
+                        "id": 1,
+                        "name": "test2323",
+                        "extend": {
+                            "lock": "80",
+                            "pawn": "0",
+                            "frozen": "15",
+                            "withdrawable": "5"
+                        },
+                        "gas": "10.00000000",
+                        "pledge": "10.00000000",
+                        "back_interest": "0.00000000",
+                        "interest": "8.00",
+                        "before": "10.0000",
+                        "after": "20.0000",
+                        "spec_id": 1,
+                        "type": "fil",
+                        "cate": 0,
+                        "is_bonus": 1,
+                        "group_id": 1,
+                        "sort": 0,
+                        "created_at": "2021-07-28 07:02:10",
+                        "updated_at": "2021-07-29 03:20:08",
+                        "issue_status": 0
+                    }
+                ]
+            }
+        ],
+        "first_page_url": "http://foo.tenancy.com/admin/group?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://foo.tenancy.com/admin/group?page=1",
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://foo.tenancy.com/admin/group?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "next_page_url": null,
+        "path": "http://foo.tenancy.com/admin/group",
+        "per_page": 20,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+}
 ```
 
 ## 添加期数分组

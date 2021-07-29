@@ -101,7 +101,8 @@ module.exports = [
   {
     text: "SaaS品牌商",
     items: [
-      { text: "后台管理", link: "/admin/saas/" }
+      { text: "后台管理", link: "/admin/saas/" },
+      { text: "API", link: "/api/saas/" }
     ]
   }
 ];
