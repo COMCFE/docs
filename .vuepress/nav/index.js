@@ -99,7 +99,7 @@ module.exports = [
   //   ]
   // }
   {
-    text: "SaaS管理后台",
+    text: "SaaS品牌商",
     items: [
       { text: "后台管理", link: "/admin/saas/" }
     ]

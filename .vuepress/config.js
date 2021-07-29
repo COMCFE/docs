@@ -5,7 +5,7 @@ module.exports = {
     "/": {
       lang: "zh-CN",
       title: "Docs",
-      description: "COMC 接口文档"
+      description: "ChainOne 接口文档"
     }
   },
   markdown: {
@@ -61,7 +61,7 @@ module.exports = {
       // 蚁创科技
       // "/api/yckj/": getYckjAppSider("移动端", "规范"),
       //saas管理后台
-      "/admin/saas/": getSaasSAdminSider("管理后台", "规范"),
+      "/admin/saas/": getSaasSAdminSider("SaaS品牌商管理后台", "规范"),
     }
   },
   plugins: [
@@ -816,24 +816,42 @@ function getYckjAppSider(title, introduction) {
   ];
 }
 
-// SaaS管理后台
+// SaaS品牌商管理后台
 function getSaasSAdminSider(title, introduction) {
   return [
     {
       title,
       collapsable: false,
       children: [
-          ["", introduction],
-          "spec",
-          "category",
-          "period",
-          "goods",
-          "certification",
-          "cny_withdrawal",
-          "config",
-          "transfer",
-          "users",
-          "withdrawal",
+        ["", introduction],
+        "spec",
+        "category",
+        "period",
+        "period_group",
+        "goods",
+        "certification",
+        "cny_withdrawal",
+        "config",
+        "transfer",
+        "users",
+        "withdrawal",
+        "ad",
+        "admin",
+        "authority",
+        "code",
+        "design",
+        "electric_order",
+        "help_center",
+        "login",
+        "notify",
+        "order",
+        "report_form",
+        "role",
+        "sales_log",
+        "sensitives",
+        "share",
+        "version",
+        "zone",
       ]
     }
   ];

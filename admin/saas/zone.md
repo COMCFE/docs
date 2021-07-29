@@ -1,8 +1,8 @@
-# 规格管理
+# 专区管理
 
-## 规格列表
+## 专区列表
 
-`admin/spec`
+`admin/zone`
 
 **请求方式**
 
@@ -32,15 +32,17 @@
         "data": [
             {
                 "id": 1,
-                "name": "test",
-                "created_at": "2021-07-28 06:34:38",
-                "updated_at": "2021-07-28 06:34:38"
+                "name": "fil",
+                "sort": 0,
+                "is_hide": 0,
+                "created_at": "2021-07-29T15:14:31.000000Z",
+                "updated_at": "2021-07-29T15:14:34.000000Z"
             }
         ],
-        "first_page_url": "http://foo.tenancy.com/admin/spec?page=1",
+        "first_page_url": "http://foo.tenancy.com/admin/zone?page=1",
         "from": 1,
         "last_page": 1,
-        "last_page_url": "http://foo.tenancy.com/admin/spec?page=1",
+        "last_page_url": "http://foo.tenancy.com/admin/zone?page=1",
         "links": [
             {
                 "url": null,
@@ -48,7 +50,7 @@
                 "active": false
             },
             {
-                "url": "http://foo.tenancy.com/admin/spec?page=1",
+                "url": "http://foo.tenancy.com/admin/zone?page=1",
                 "label": "1",
                 "active": true
             },
@@ -59,7 +61,7 @@
             }
         ],
         "next_page_url": null,
-        "path": "http://foo.tenancy.com/admin/spec",
+        "path": "http://foo.tenancy.com/admin/zone",
         "per_page": 20,
         "prev_page_url": null,
         "to": 1,
@@ -68,13 +70,13 @@
 }
 ```
 
-## 添加规格
+## 专区列表（用于筛选）
 
-`admin/spec`
+`admin/zone`
 
 **请求方式**
 
-`POST`
+`GET`
 
 #### 请求Header参数
 
@@ -86,23 +88,31 @@
 
 |   名称   |  类型  | 默认 | 必须 |                说明                 |
 | :------: | :----: | :--: | :--: | :---------------------------------: |
-|   name   | string |  无  |  是  |                名称                 |
 
 **SUCCESS 返回体**
 
 ```json
 {
-    "msg": "添加成功",
+    "msg": "ok",
     "code": 0,
-    "data": null
+    "data": [
+        {
+            "id": 1,
+            "name": "fil",
+            "sort": 0,
+            "is_hide": 0,
+            "created_at": "2021-07-29T15:14:31.000000Z",
+            "updated_at": "2021-07-29T15:14:34.000000Z"
+        }
+    ]
 }
 ```
 
 
 
-## 编辑规格
+## 专区隐藏
 
-`admin/spec/{spec}`
+`admin/zone/{zone}/hidden`
 
 **请求方式**
 
@@ -118,25 +128,24 @@
 
 |   名称   |  类型  | 默认 | 必须 |                说明                 |
 | :------: | :----: | :--: | :--: | :---------------------------------: |
-|   name   | string |  无  |  否  |                名称                 |
 
 **SUCCESS 返回体**
 
 ```json
 {
-    "msg": "更新成功",
+    "msg": "修改成功",
     "code": 0,
     "data": null
 }
 ```
 
-## 删除规格
+## 专区排序
 
-`admin/spec/{spec}`
+`admin/zone/{zone}/sort`
 
 **请求方式**
 
-`DELETE`
+`PATCH`
 
 #### 请求Header参数
 
@@ -151,7 +160,7 @@
 
 ```json
 {
-    "msg": "删除成功",
+    "msg": "修改成功",
     "code": 0,
     "data": null
 }
