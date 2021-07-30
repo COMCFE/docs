@@ -58,8 +58,8 @@
     "fpic": "sadasdasd.png",
     "bpic": "sadasdasd.png",
     "hpic": "sadasdasd.png",
-    "status": 0 /*0-待审核 1-审核通过 2-驳回*/,
-    "reason": null /*驳回原因*/,
+    "status": 0 ,/*0-待审核 1-审核通过 2-驳回*/
+    "reason": null, /*驳回原因*/
     "created_at": null,
     "updated_at": null
   }

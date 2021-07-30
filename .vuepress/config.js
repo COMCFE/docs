@@ -53,8 +53,8 @@ module.exports = {
       // "/api/hashevery/": getHasheveryAppSider("移动端", "规范"),
       // "/admin/hashevery/": getHasheveryAdminSider("后台管理", "说明"),
       // 标准模板
-      "/api/template/": getTemplateAppSider("移动端", "规范"),
-      "/admin/template/": getTemplateAdminSider("后台管理", "说明"),
+      //"/api/template/": getTemplateAppSider("移动端", "规范"),
+      //"/admin/template/": getTemplateAdminSider("后台管理", "说明"),
       // 甬力区
       // "/api/ylq/": getYlqAppSider("移动端", "规范"),
       // "/admin/ylq/": getYlqAdminSider("后台管理", "说明"),
