@@ -842,25 +842,6 @@ function getSaasSAdminSider(title, introduction) {
         "code",
         "design",
         "electric_order",
-        "help_center",
-        "login",
-        "notify",
-        "order",
-        "report_form",
-        "role",
-        "sales_log",
-        "sensitives",
-        "share",
-        "version",
-        "zone",
-        "feedback",
-        "home",
-        "market",
-        "new",
-        "new_cate",
-        "recharge_logs",
-        "tenant",
-        "message"
       ]
     }
   ];
@@ -873,6 +854,7 @@ function getSaasSApiSider(title, introduction) {
       collapsable: false,
       children: [
         ["", introduction],
+        "order",
       ]
     }
   ];
