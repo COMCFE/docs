@@ -4,8 +4,6 @@
 set -e
 
 # 生成静态文件
-yarn upgrade caniuse-lite browserslist
-
 yarn build
 
 # 拷贝 .circleci/ 文件夹至 .vuepress/dist
