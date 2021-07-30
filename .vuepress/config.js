@@ -878,12 +878,22 @@ function getSaasSApiSider(title, introduction) {
         "user",
         "feedback",
         "certification",
+        "ad",
+        "auth",
+        "goods",
+        "help",
+        "home",
+        "invite",
+        "market",
+        "transfer",
+        "verification_code",
+        "wallet",
         "category",
         "comment",
         "config",
         "message",
         "new",
-        "withdrawal",
+        "withdrawal"
       ]
     }
   ];
