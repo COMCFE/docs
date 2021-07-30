@@ -40,8 +40,6 @@ jobs:
             git config --global user.name $GH_NAME
             chmod -R u+x ./deploy.sh
             chmod -R u+x ./node_modules
-      - store_test_results:
-          path: test-results
 
       - run:
           name: Deploy
