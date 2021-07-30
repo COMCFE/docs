@@ -38,7 +38,7 @@ jobs:
           command: |
             git config --global user.email $GH_EMAIL
             git config --global user.name $GH_NAME
-            chmod -R 777 node_modules
+            chmod -R 777 ./node_modules
             chmod 777 ./deploy.sh
             free -m
 
