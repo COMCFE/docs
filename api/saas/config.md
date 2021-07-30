@@ -20,7 +20,6 @@
             "url_rule": "邀请链接说明",
             "invite_url": "foo.saas.me/register"
         },
-        // 支付开关
         "pay_switch": {
             "bank": "on",
             "usdt": "on",
@@ -43,15 +42,11 @@
         },
         "electricity": {
             "desc": "最低需要预付2周电费",
-            // 全年电费
             "year": "0.36",
             "limit": "1000",
-            // 全年显卡电费
             "gpu_year": "0.42",
             "end_month": "10",
-            // 枯水电价
             "low_water": "0.38",
-            // 沣水电价
             "full_water": "0.23",
             "start_month": "6"
         },
@@ -147,14 +142,10 @@
             "user_min": "100",
             "user_day_limit": "1000"
         },
-        // 税点
         "tax": {
-            // 现金
             "bank": "1",
-            // usdt
             "usdt": "1"
         },
-        // 设计风格
         "design_style": {
             "app_name": "风格名称",
             "rgb_color": "5847e1",

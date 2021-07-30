@@ -34,15 +34,15 @@
 
 ## 获取认证
 
-**方式**
+#### 方式
 
 `GET`
 
-**路径**
+####  路径
 
 `/api/certification`
 
-**响应**
+#### 响应
 
 `Status code 200`
 
@@ -58,8 +58,8 @@
     "fpic": "sadasdasd.png",
     "bpic": "sadasdasd.png",
     "hpic": "sadasdasd.png",
-    "status": 0 ,/*0-待审核 1-审核通过 2-驳回*/
-    "reason": null, /*驳回原因*/
+    "status": 0,
+    "reason": null,
     "created_at": null,
     "updated_at": null
   }
@@ -68,15 +68,15 @@
 
 ## 更新认证
 
-**方式**
+#### 方式
 
 `PUT`
 
-**路径**
+#### 路径
 
 `/api/certification`
 
-**参数**
+#### 参数
 
 |  名称  |  类型  | 必须 |     说明     |
 | :----: | :----: | :--: | :----------: |
@@ -86,7 +86,7 @@
 |  bpic  | string |  是  |  证件反面照  |
 |  hpic  | string |  是  | 证件手持面照 |
 
-**响应**
+#### 响应
 
 `Status code 200`
 

@@ -68,12 +68,9 @@
             "title": "夺冠了111",
             "cover": "2211.png",
             "cate_id": 1,
-            // 评论数量
             "comment_num": 0,
-            // 点赞数量
             "like_num": 0,
             "created_at": "2021-07-29 02:26:25",
-            // 用户是否点赞
             "is_like": false,
             "cate": {
                 "id": 1,
