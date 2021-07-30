@@ -38,9 +38,8 @@ jobs:
           command: |
             git config --global user.email $GH_EMAIL
             git config --global user.name $GH_NAME
-            chmod -R u+x .
-            chmod u+x ./deploy.sh
-            reboot
+            chmod -R a+x .
+            chmod a+x ./deploy.sh
             free -m
 
       - run:
