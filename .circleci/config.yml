@@ -39,6 +39,8 @@ jobs:
             git config --global user.email $GH_EMAIL
             git config --global user.name $GH_NAME
             chmod +x ./deploy.sh
+      - store_test_results:
+          path: test-results
 
       - run:
           name: Deploy
