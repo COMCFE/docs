@@ -34,6 +34,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
+          name: Nodelimit
+          command: setx NODE_OPTIONS --max_old_space_size=8096
+
+      - run:
           name: Prepare deploy
           command: |
             git config --global user.email $GH_EMAIL
