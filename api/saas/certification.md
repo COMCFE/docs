@@ -4,12 +4,11 @@
 
  **方式**
 
-> `POST`
+`POST`
 
 **路径**
 
-> /api/certification
->
+`/api/certification`
 
 #### **参数**
 

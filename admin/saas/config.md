@@ -402,7 +402,7 @@
 
 #### 接口URL
 > fil/usdt/eth/btc/xch
-> {{url}}/configs//fil/transfer
+> {{url}}/configs/fil/transfer
 
 #### 请求方式
 > GET

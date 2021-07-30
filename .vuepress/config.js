@@ -860,6 +860,7 @@ function getSaasSAdminSider(title, introduction) {
         "new_cate",
         "recharge_logs",
         "tenant",
+        "message"
       ]
     }
   ];
@@ -877,6 +878,12 @@ function getSaasSApiSider(title, introduction) {
         "user",
         "feedback",
         "certification",
+        "category",
+        "comment",
+        "config",
+        "message",
+        "new",
+        "withdrawal",
       ]
     }
   ];
