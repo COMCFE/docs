@@ -73,16 +73,6 @@ module.exports = {
         updatePopup: true
       }
     ],
-    [
-      "@vuepress/last-updated",
-      {
-        transformer: (timestamp, lang) => {
-          const moment = require("moment");
-          moment.locales(lang);
-          return moment(timestamp).fromNow();
-        }
-      }
-    ],
     ["@vuepress/back-to-top", true],
     ["@vuepress/notification", true]
   ]
