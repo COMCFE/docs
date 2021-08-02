@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-npm run build
+yarn build
 
 # 拷贝 .circleci/ 文件夹至 .vuepress/dist
 cp -r .circleci/ .vuepress/dist
