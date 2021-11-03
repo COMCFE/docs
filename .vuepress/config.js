@@ -18,9 +18,9 @@ module.exports = {
     searchMaxSuggestions: 10,
     sidebar: {
       // 链优品
-      // "/api/lianyoupin/": getLypinAppSider("移动端", "规范"),
-      // "/admin/lianyoupin/": getLypAdminSider("后台管理", "说明"),
-      // "/merchant/": getLypMerchantSider("商户管理", "说明"),
+      "/api/lianyoupin/": getLypinAppSider("移动端", "规范"),
+      "/admin/lianyoupin/": getLypAdminSider("后台管理", "说明"),
+      "/merchant/": getLypMerchantSider("商户管理", "说明"),
       // Imeet
       // "/api/imeet/": getImeetAppSider("移动端", "规范"),
       // "/admin/imeet/": getImeetAdminSider("后台管理", "说明"),
@@ -77,7 +77,125 @@ module.exports = {
     ["@vuepress/notification", true]
   ]
 };
+// 链优品APP接口文档
+function getLypinAppSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "user",
+        "code",
+        "goods",
+        "poster",
+        "consignees",
+        "order",
+        "base",
+        "help",
+        "message",
+        "yz-auth",
+        "wallet",
+        "discounts",
+        "ad",
+        "application",
+        "version",
+        "task",
+        "certification",
+        "file",
+        "share",
+        "ore",
+        "juhe",
+        "bind-apps",
+        "tbk",
+        "project-goods",
+        "withdrawal",
+        "tbk-wallet",
+        "tbk-member",
+        "tbk-performance",
+        "weiyi",
+        "tbk-gift",
+        "tbk-home",
+        "hdk",
+        "duomai"
+      ]
+    }
+  ];
+}
 
+// 链优品后台接口文档
+function getLypAdminSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "upload",
+        "goods",
+        "goods-cate",
+        "administrator",
+        "roles",
+        "currency",
+        "discount",
+        "sms",
+        "system",
+        "order",
+        "goods_orders",
+        "help",
+        "task",
+        "feedback",
+        "ad",
+        "express",
+        "withdraw",
+        "statistics",
+        "message",
+        "user",
+        "poster",
+        "special",
+        "youzan",
+        "merchant",
+        "config",
+        "item",
+        "app-version",
+        "certification",
+        "ore",
+        "recharge",
+        "coupon",
+        "token",
+        "tbk-favorites",
+        "tbk-member",
+        "cash-withdrawal",
+        "tbk-wallet",
+        "tbk-cate",
+        "tbk-gift",
+        "tbk-gift-order",
+        "tbk-column",
+        "duomai"
+      ]
+    }
+  ];
+}
+
+// 链优品商户接口文档
+function getLypMerchantSider(title, introduction) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        ["", introduction],
+        "merchant",
+        "common",
+        "login",
+        "order",
+        "wallet",
+        "withdraw",
+        "yzOrder"
+      ]
+    }
+  ];
+}
 // 标准模板
 function getTemplateAppSider(title, introduction) {
   return [
