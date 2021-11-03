@@ -190,8 +190,8 @@ function getLypMerchantSider(title, introduction) {
         "login",
         "order",
         "wallet",
-        "withdraw",
-        "yzOrder"
+        "yzOrder",
+        "withdraw"
       ]
     }
   ];
