@@ -41,6 +41,6 @@
     ]
   },
   "dependencies": {
-    "moment": "^2.23.0"
+    "moment": "^2.29.2"
   }
 }
